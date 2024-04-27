@@ -10,3 +10,5 @@ It uses unicode symbols for the icons so it should be compatible with different 
 Note: the screenshot uses the theme Solarized-osaka, so it might look a bit different for you
 
 ![Captura de pantalla 2024-04-27 234956](https://github.com/lvzrr/DirList/assets/161524890/0c308adc-e488-47dc-9e42-ae566eb5175e)
+### Performance 
+In terms of performance, at least in my machine, matches the windows `dir` command and sometimes even surpasses it in speed normally running for around 0.03 seconds 
