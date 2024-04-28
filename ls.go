@@ -5,6 +5,7 @@ import (
 	"io/ioutil"
 	"os"
 	"path/filepath"
+  "strings"
 )
 
 var redOpen string = "\x1b[31m"
@@ -81,7 +82,7 @@ fmt.Println("\n")
 }
 func checkcolor(extention string) []string{
   var c,cc,ico string
-    switch extention {
+    switch strings.ToLower(extention) {
     case ".py":
         c = blueOpen
         cc = blueClose
