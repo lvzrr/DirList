@@ -66,6 +66,9 @@ func main() {
 
 		if !f.IsDir() {
 			c, cc , ico = checkcolor(extension)[0], checkcolor(extension)[1],checkcolor(extension)[2]
+      if len(extension)> 9 {
+        extension = "   "
+      }
 			fmt.Printf("%-16s %-23s %-16d %-14s %-9s%-26s\n", f.Mode(), f.ModTime().Format("02/01/06 15:04"), f.Size(), c+extension,ico, f.Name()+cc)
 		} else {
 			c = greyOpen
