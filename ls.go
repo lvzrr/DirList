@@ -39,7 +39,7 @@ var lightMagentaOpen string = "\033[95m"
 var lightMagentaClose string = "\033[0m" 
 var lightCyanOpen string = "\033[96m" 
 var lightCyanClose string = "\033[0m" 
-var lightOrangeOpen string = "\033[38;5;214m"
+var lightOrangeOpen string = "\033[215m"
 var lightOrangeClose string = "\033[0m"      
 var whiteOpen string = "\033[97m"
 var whiteClose string = "\033[0m"
@@ -82,63 +82,63 @@ func checkcolor(extention string) []string{
     case ".py":
         c = blueOpen
         cc = blueClose
-        ico = "🐍" // 🐍 Python snake
+        ico = "🐍" 
     case ".go":
         c = blueOpen
         cc = blueClose
-        ico = "🐧" // 🐧 Gopher
+        ico = "🐧" 
     case ".c", ".cpp":
         c = redOpen
         cc = redClose
-        ico = "🔨" // 🔨 Hammer and wrench
+        ico = "🔨"
     case ".exe", ".sh":
         c = lightGreenOpen
         cc = lightGreenClose
-        ico = "💾" // 💻 Laptop
+        ico = "💾" 
     case ".java":
         c = yellowOpen
         cc = yellowClose
-        ico = "☕" // ☕ Coffee
+        ico = "☕" 
     case ".rs":
         c = orangeOpen
         cc = orangeClose
-        ico = "🦀" // 🦀 Rust crab
+        ico = "🦀" 
     case ".mp4", ".avi", ".mov":
         c = magentaOpen
         cc = magentaClose
-        ico = "🎥" // 🎥 Movie camera
+        ico = "🎥"
     case ".mp3", ".wav", ".flac", ".ogg", ".opus":
         c = cyanOpen
         cc = cyanClose
-        ico = "🎵" // 🎵 Musical note
+        ico = "🔊" 
     case ".html", ".css" :
         c = purpleOpen
         cc = purpleClose
-        ico = "🌐" // 🌐 Globe with meridians
+        ico = "🌐" 
     case ".txt", ".md":
         c = whiteOpen
         cc = whiteClose
-        ico = "📄" // 📄 Page facing up
+        ico = "📄" 
     case ".svg", ".png", ".jpg":
         c = tealOpen
         cc = tealClose
-        ico = "🖼️" // 🖼️ Framed picture
+        ico = "🎇" 
     case ".pdf":
         c = lightRedOpen
         cc = lightRedClose
         ico = "📝" 
     case ".pptx":
-        c = lightOrangeOpen
-        cc = lightOrangeClose
-        ico = "\U0001F4DA" // 🖼️ Framed picture
+        c = lightyellowOpen
+        cc = lightyellowClose
+        ico = "📒" 
     case ".json", ".js":
         c = lightyellowOpen
         cc = lightyellowClose
-        ico = "📜" // 📝 Page facing up with pen (light yellow icon)
+        ico = "📜" 
     case ".zip":
         c = lightGreenOpen
         cc = lightGreenClose
-        ico = "📦" // 📦 Package (light green icon)
+        ico = "📦" 
 
     default:
         c = whiteOpen
